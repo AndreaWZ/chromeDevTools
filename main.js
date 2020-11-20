@@ -11,9 +11,10 @@ const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
     }
 
 // Regular
+console.log("Hello World!");
 
 // Interpolated
-
+console.log("Hello I am a %s String", '🤓');
 // Styled
 
 // warning!
