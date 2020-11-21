@@ -61,7 +61,7 @@ window.onload = function(){
   /* the way to see all the properties of 
   a specified JavaScript object in console */
   console.dir(p);
-  
+
   //====================================================================================================
   // Grouping together
   /* create a group of messages in the console */
@@ -75,8 +75,33 @@ window.onload = function(){
 
   })
 
+  //=============================================
   // counting
+  for(let i = 0; i < 10; i++){
+    console.count();
+  };
 
+  console.count("James");
+  console.count("James");
+  console.count("Andrea");
+  console.count("James");
+  console.count("Andrea");
+  console.count("Andrea");
+  console.count("James");
+  console.count("James");
+
+  //=============================================
   // timing
+  /* how long does it take to perform a for-loop, function, variable, so on 100.000 times: */
+  console.time();
+  for (i = 0; i < 100000; i++) {
+    // some code
+  }
+  console.timeEnd();
+
+  //=============================================
+  // table
+  /* write a table in the console */
+  console.table(dogs);
 
 }
