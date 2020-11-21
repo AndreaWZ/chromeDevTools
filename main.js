@@ -23,8 +23,10 @@ console.log(`Hello I am a ${happy} String!`);
 console.log('%c This is a great text', 'font-size: 20px; color: blue; background-color: yellow')
 
 // warning!
+console.warn("Oh Nooo!");
 
 // Error :|
+console.error("Shit");
 
 // Info
 
