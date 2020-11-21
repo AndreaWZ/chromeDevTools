@@ -56,12 +56,24 @@ window.onload = function(){
   /* clear all messages in the console: */
   console.clear();
 
+  //====================================================================
   // Viewing DOM Elements
   /* the way to see all the properties of 
   a specified JavaScript object in console */
   console.dir(p);
-
+  
+  //====================================================================================================
   // Grouping together
+  /* create a group of messages in the console */
+  dogs.forEach(function(dog){     // dogs.forEach(dog => {})
+      console.group(`${dog.name}`); 
+      /*  or 'console.groupCollapsed()' to display the message group by clicking the expand button */
+      console.log(`This is ${dog.name}`);
+      console.log(`${dog.name} is ${dog.age} years old`);
+      console.log(`${dog.name} is ${dog.age} dog years old`);
+      console.groupEnd(`${dog.name}`);
+
+  })
 
   // counting
 
