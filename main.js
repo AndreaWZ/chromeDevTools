@@ -27,30 +27,39 @@ window.onload = function(){
   /* for style the text on the console */
   console.log('%c This is a great text', 'font-size: 20px; color: blue; background-color: yellow')
 
-  //================================================
+  //===================================================
   // warning!
   console.warn("Oh Nooo!");
 
-  //================================================
+  //===================================================
   // Error :|
   console.error("Shit");
 
+  //====================================================
   // Info
   /* for permanent messages you want to output to the 
   console in your code, such as information on 
   the current app status */
   console.info("I am a console.info() method"); 
 
+  //====================================================
   // Testing
   /* Write message to the console, 
   only if the first argument is false: */
   const p = document.querySelector('p');
 
-  console.assert(p.classList.contains("ouch"), "That is wrong!")
+  console.assert(p.classList.contains("p"), "That is wrong!")
+  // console.assert(p.classList.contains("ouch"), "That is wrong!")
 
+  //====================================================================
   // clearing
+  /* clear all messages in the console: */
+  console.clear();
 
   // Viewing DOM Elements
+  /* the way to see all the properties of 
+  a specified JavaScript object in console */
+  console.dir(p);
 
   // Grouping together
 
