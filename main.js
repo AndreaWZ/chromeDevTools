@@ -14,8 +14,13 @@ const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
 console.log("Hello World!");
 
 // Interpolated
-console.log("Hello I am a %s String", '🤓');
+var happy = ":)";
+console.log("Hello I am a %s String!", '🤓');
+console.log("Hello I am a %s String!", happy);
+console.log(`Hello I am a ${happy} String!`);
+
 // Styled
+console.log('%c This is a great text', 'font-size: 20px; color: blue; background-color: yellow')
 
 // warning!
 
